@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/offlineRoot"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="#ffffff">
+
+    <!-- Players info -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="2"
+        android:paddingBottom="16dp">
+
+        <TextView
+            android:id="@+id/playerXText"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Player X: 0"
+            android:textSize="18sp"
+            android:textColor="#000000"
+            android:gravity="start"/>
+
+        <TextView
+            android:id="@+id/playerOText"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Player O: 0"
+            android:textSize="18sp"
+            android:textColor="#000000"
+            android:gravity="end"/>
+    </LinearLayout>
+
+    <!-- Tic-Tac-Toe Grid -->
+    <GridLayout
+        android:id="@+id/gridLayout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:columnCount="3"
+        android:rowCount="3"
+        android:alignmentMode="alignMargins"
+        android:useDefaultMargins="true">
+
+        <!-- 9 Buttons for Tic-Tac-Toe -->
+        <Button android:id="@+id/btn0" android:layout_width="0dp" android:layout_height="0dp"
+            android:layout_columnWeight="1" android:layout_rowWeight="1" android:textSize="36sp"/>
+        <Button android:id="@+id/btn1" android:layout_width="0dp" android:layout_height="0dp"
+            android:layout_columnWeight="1" android:layout_rowWeight="1" android:textSize="36sp"/>
+        <Button android:id="@+id/btn2" android:layout_width="0dp" android:layout_height="0dp"
+            android:layout_columnWeight="1" android:layout_rowWeight="1" android:textSize="36sp"/>
+        <Button android:id="@+id/btn3" android:layout_width="0dp" android:layout_height="0dp"
+            android:layout_columnWeight="1" android:layout_rowWeight="1" android:textSize="36sp"/>
+        <Button android:id="@+id/btn4" android:layout_width="0dp" android:layout_height="0dp"
+            android:layout_columnWeight="1" android:layout_rowWeight="1" android:textSize="36sp"/>
+        <Button android:id="@+id/btn5" android:layout_width="0dp" android:layout_height="0dp"
+            android:layout_columnWeight="1" android:layout_rowWeight="1" android:textSize="36sp"/>
+        <Button android:id="@+id/btn6" android:layout_width="0dp" android:layout_height="0dp"
+            android:layout_columnWeight="1" android:layout_rowWeight="1" android:textSize="36sp"/>
+        <Button android:id="@+id/btn7" android:layout_width="0dp" android:layout_height="0dp"
+            android:layout_columnWeight="1" android:layout_rowWeight="1" android:textSize="36sp"/>
+        <Button android:id="@+id/btn8" android:layout_width="0dp" android:layout_height="0dp"
+            android:layout_columnWeight="1" android:layout_rowWeight="1" android:textSize="36sp"/>
+    </GridLayout>
+
+    <!-- Winner Display -->
+    <TextView
+        android:id="@+id/winnerText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textSize="20sp"
+        android:textColor="#FF5722"
+        android:gravity="center"
+        android:paddingTop="16dp"/>
+
+    <!-- Reset Button -->
+    <Button
+        android:id="@+id/resetButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="New Game"
+        android:textSize="18sp"
+        android:backgroundTint="#2196F3"
+        android:textColor="#FFFFFF"
+        android:layout_marginTop="16dp"/>
+
+</LinearLayout>
